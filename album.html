@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albüm | Ceren Ceylan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <style>
+        body { margin: 0; background-color: #000; color: #fff; font-family: 'Times New Roman', serif; }
+        
+        /* Üst Menü */
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 60px;
+            box-sizing: border-box;
+            background: rgba(0,0,0,0.9);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        .logo { font-family: 'Mrs Saint Delafield', cursive; font-size: 3.5rem; text-decoration: none; color: #fff; }
+        .nav-links { display: flex; gap: 20px; align-items: center; }
+        .nav-links a { color: #fff; text-decoration: none; font-size: 0.8rem; letter-spacing: 2px; transition: 0.3s; }
+        .nav-links a:hover { opacity: 0.5; }
+        .social-icons img { width: 25px; transition: 0.3s; }
+
+        /* Albüm Başlığı */
+        .page-title { text-align: center; margin: 80px 0; }
+        .page-title h1 { font-size: 3rem; letter-spacing: 15px; font-weight: normal; margin: 0; text-transform: uppercase; }
+        .page-title p { color: #555; letter-spacing: 3px; font-style: italic; margin-top: 15px; }
+
+        /* Galeri Izgarası (Masonry) */
+        .gallery-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 20px 100px 20px;
+            column-count: 3; /* Yan yana 3 sütun */
+            column-gap: 25px;
+        }
+
+        .gallery-item {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 25px;
+            border-radius: 4px;
+            overflow: hidden;
+            background: #0a0a0a;
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            filter: grayscale(30%);
+            transition: 0.8s;
+        }
+
+        .gallery-item:hover { 
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255,255,255,0.08); 
+        }
+        
+        .gallery-item:hover img { 
+            filter: grayscale(0%); 
+            transform: scale(1.03);
+        }
+
+        /* Mobil Uyumluluk */
+        @media (max-width: 1000px) { .gallery-container { column-count: 2; } }
+        @media (max-width: 600px) { 
+            .gallery-container { column-count: 1; }
+            header { padding: 20px; flex-direction: column; gap: 15px; }
+        }
+
+        footer { text-align: center; padding: 50px; opacity: 0.2; font-size: 0.7rem; letter-spacing: 2px; border-top: 1px solid #111; }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">Ceren Ceylan</a>
+    <div class="nav-links">
+        <a href="hakkimda.html">HAKKIMDA</a>
+        <a href="album.html">ALBÜM</a>
+        <a href="iletisim.html">İLETİŞİM</a>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/ceylance13?igsh=MTVhMGFxNWZlZ2NlNA%3D%3D&utm_source=qr" target="_blank"><img src="instagram-logo.png" alt="Instagram"></a>
+            <a href="https://whatsapp.com/channel/0029Vb6ljN6FcowBLg3qWW2S" target="_blank"><img src="whatsapp-logo.png" alt="WhatsApp"></a>
+        </div>
+    </div>
+</header>
+
+<div class="page-title">
+    <h1>ALBÜM</h1>
+    <p>Zihnimdeki sahnelerin dünyaya sızmış halleri...</p>
+</div>
+
+<div class="gallery-container">
+    <div class="gallery-item"><img src="album1.png"></div>
+    <div class="gallery-item"><img src="album2.png"></div>
+    <div class="gallery-item"><img src="album3.png"></div>
+    <div class="gallery-item"><img src="album4.png"></div>
+    <div class="gallery-item"><img src="album5.png"></div>
+    <div class="gallery-item"><img src="album6.png"></div>
+    <div class="gallery-item"><img src="album7.png"></div>
+    <div class="gallery-item"><img src="album8.png"></div>
+    <div class="gallery-item"><img src="album9.png"></div>
+    <div class="gallery-item"><img src="album10.png"></div>
+    <div class="gallery-item"><img src="album11.png"></div>
+    <div class="gallery-item"><img src="album12.png"></div>
+    <div class="gallery-item"><img src="album13.png"></div>
+    <div class="gallery-item"><img src="album14.png"></div>
+    <div class="gallery-item"><img src="album15.png"></div>
+    <div class="gallery-item"><img src="album16.png"></div>
+    <div class="gallery-item"><img src="album17.png"></div>
+    <div class="gallery-item"><img src="album18.png"></div>
+    <div class="gallery-item"><img src="album19.png"></div>
+    <div class="gallery-item"><img src="album20.png"></div>
+    <div class="gallery-item"><img src="album21.png"></div>
+    <div class="gallery-item"><img src="album22.png"></div>
+</div>
+
+<footer>© 2024 CEREN CEYLAN | TÜM HAKLARI SAKLIDIR</footer>
+
+</body>
+</html>

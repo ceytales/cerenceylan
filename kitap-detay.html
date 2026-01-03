@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hüma Kuşu | Bölümler</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navigasyon */
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 60px;
+            box-sizing: border-box;
+        }
+
+        .logo { 
+            font-family: 'Mrs Saint Delafield', cursive; 
+            font-size: 3.5rem; 
+            text-decoration: none; 
+            color: #fff;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        /* Ana İçerik Alanı */
+        .main-container {
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .book-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .main-cover {
+            width: 300px;
+            border-radius: 4px;
+            box-shadow: 0 0 40px rgba(255,255,255,0.1);
+            margin-bottom: 20px;
+        }
+
+        .author-mini {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        .author-mini img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Başlık ve İstatistikler */
+        h1 {
+            font-size: 3.5rem;
+            letter-spacing: 10px;
+            margin: 40px 0 20px 0;
+            font-weight: normal;
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            color: #999;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 50px;
+        }
+
+        /* OKU Butonu */
+        .btn-oku-large {
+            display: inline-block;
+            padding: 15px 80px;
+            border: 1px solid #fff;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+            transition: 0.3s;
+            margin-bottom: 80px;
+        }
+
+        .btn-oku-large:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        /* Arka Kapak ve İçindekiler */
+        .description {
+            font-size: 1.8rem;
+            margin-bottom: 60px;
+            color: #eee;
+        }
+
+        .contents-title {
+            text-align: left;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .chapter-list {
+            text-align: left;
+            width: 100%;
+        }
+
+        .chapter-link {
+            display: block;
+            padding: 20px 0;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-bottom: 1px solid #222;
+            transition: 0.3s;
+        }
+
+        .chapter-link:hover {
+            color: #ccc;
+            padding-left: 10px;
+        }
+
+        /* Mobilde de düzgün görünsün */
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+            .main-cover { width: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">Ceren Ceylan</a>
+    <div class="nav-links">
+        <a href="#">HAKKIMDA</a>
+        <a href="#">ALBÜM</a>
+        <a href="#">İLETİŞİM</a>
+        <div class="social-icons">
+            <img src="instagram-logo.png" alt="Instagram">
+            <img src="whatsapp-logo.png" alt="Whatsapp">
+        </div>
+    </div>
+</header>
+
+<div class="main-container">
+    
+    <div class="book-wrapper">
+        <img src="huma-kusu.jpg" class="main-cover" alt="Hüma Kuşu">
+        <div class="author-mini">
+            <img src="profil-resmin.jpg" alt="Ceren Ceylan"> 
+            <span>Ceren Ceylan</span>
+        </div>
+    </div>
+
+    <h1>HÜMA KUŞU</h1>
+
+    <div class="stats-bar">
+        <span>👁 OKUNMA</span>
+        <span>|</span>
+        <span>⋮☰ BÖLÜMLER</span>
+    </div>
+
+    <a href="oku.html" class="btn-oku-large">OKU</a>
+
+    <div class="description">
+        Arka kapak yazısı
+    </div>
+
+    <div class="chapter-list">
+        <div class="contents-title">İçindekiler</div>
+        <a href="oku.html" class="chapter-link">GİRİŞ</a>
+        <a href="oku.html" class="chapter-link">1. GÜNEŞ DOĞDU DİYE KABUSLAR NEDEN BİTSİN</a>
+        <a href="oku.html" class="chapter-link">2. YENİ BİR BÖLÜM ADI</a>
+        <a href="oku.html" class="chapter-link">3. BÖLÜM: DERİNLİKLER</a>
+        <a href="oku.html" class="chapter-link">4. BÖLÜM: SONA DOĞRU</a>
+        </div>
+
+</div>
+
+<footer style="padding: 100px; opacity: 0.2; font-size: 0.7rem;">
+    CEREN CEYLAN PORTFOLYO
+</footer>
+
+</body>
+</html>

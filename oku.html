@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Güneşi Beklerken | Bölüm 1</title>
+    <style>
+        /* Wattpad Tarzı Okuma Odaklı Tasarım */
+        body {
+            background-color: #fdfaf6; /* Kağıt dokusu rengi */
+            margin: 0;
+            padding: 0;
+            color: #2c2c2c;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Üst Gezinti Çubuğu */
+        .nav-bar {
+            width: 100%;
+            padding: 15px 0;
+            background: white;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: #8b4513;
+            font-family: sans-serif;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Okuma Alanı */
+        .reading-container {
+            max-width: 700px; /* Okuma kolaylığı için ideal genişlik */
+            background: white;
+            margin: 40px 20px;
+            padding: 80px 60px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.03);
+            border-radius: 2px;
+        }
+
+        .book-info-header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 1px double #eee;
+            padding-bottom: 30px;
+        }
+
+        .book-info-header span {
+            font-family: sans-serif;
+            color: #999;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            font-size: 2.8rem;
+            margin: 10px 0;
+            color: #1a1a1a;
+        }
+
+        /* Ana Metin Bölümü */
+        .story-content {
+            font-family: 'Georgia', serif;
+            font-size: 1.3rem; /* Büyük ve rahat font */
+            line-height: 2; /* Wattpad gibi geniş satır aralığı */
+            color: #333;
+            text-align: justify;
+        }
+
+        .story-content p {
+            margin-bottom: 30px;
+            text-indent: 30px; /* Paragraf başı boşluğu */
+        }
+
+        /* Alt Gezinti */
+        .chapter-footer {
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            background: #1a1a1a;
+            color: white !important;
+            text-decoration: none;
+            border-radius: 30px;
+            font-family: sans-serif;
+            font-size: 0.8rem;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #8b4513;
+            transform: translateY(-2px);
+        }
+
+        /* Mobil Uyumluluk */
+        @media (max-width: 600px) {
+            .reading-container {
+                padding: 40px 20px;
+            }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <a href="index.html">🏠 Kütüphane</a>
+        <a href="kitap-detay.html">📖 Tanıtım</a>
+    </div>
+
+    <div class="reading-container">
+        <div class="book-info-header">
+            <span>Güneşi Beklerken</span>
+            <h1>Bölüm 1: İlk Işık</h1>
+        </div>
+        
+        <div class="story-content">
+            <p>Gökyüzü henüz tamamen aydınlanmamıştı. Ceren, bisikletinin sepetindeki papatyaları düzelterek denizin kokusunu içine çekti. Her sabah olduğu gibi, güneşin o ilk ışıklarının denizin ufkunda belirmesini bekliyordu.</p>
+            
+            <p>Bazı insanlar için beklemek bir kayıptı, ama onun için beklemek bir umuttu. "Gün doğmadan doğar," diye fısıldadı kendi kendine. Bu söz, annesinden kalan en değerli mirastı. Sahilin sessizliği, dalgaların hafif hışırtısı ve yaklaşan güneşin vaadi...</p>
+
+            <p>İşte hikaye böyle başladı. Hayatın tüm karmaşasına rağmen, bir bisikletin selesinde taşınan o saf niyetlerle.</p>
+        </div>
+
+        <div class="chapter-footer">
+            <a href="kitap-detay.html" class="btn" style="background: #999;">Geri Dön</a>
+            <a href="#" class="btn">Sonraki Bölüm →</a>
+        </div>
+    </div>
+
+    <footer style="padding: 40px; color: #ccc; font-family: sans-serif; font-size: 0.7rem;">
+        CEREN CEY
